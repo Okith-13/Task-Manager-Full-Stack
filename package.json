@@ -1,0 +1,15 @@
+{
+  "name": "task-manager-full-stack",
+  "version": "1.0.0",
+  "description": "Full Stack Task Manager application",
+  "scripts": {
+    "all-install": "npm install && npm install --prefix server && npm install --prefix client",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
