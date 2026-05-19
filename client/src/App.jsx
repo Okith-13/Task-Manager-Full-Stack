@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+const API = "/api";
 
 function App() {
   const [message, setMessage] = useState('')
